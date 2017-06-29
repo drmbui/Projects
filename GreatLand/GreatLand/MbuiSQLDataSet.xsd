@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MbuiSQLDataSet" targetNamespace="http://tempuri.org/MbuiSQLDataSet.xsd" xmlns:mstns="http://tempuri.org/MbuiSQLDataSet.xsd" xmlns="http://tempuri.org/MbuiSQLDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="MbuiSQLConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MbuiSQLConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.MbuiSQLConnectionString.ConnectionString" Provider="System.Data.Odbc" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="Active" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Active (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.Active.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MbuiSQLDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MbuiSQLDataSet" msprop:Generator_UserDSName="MbuiSQLDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GetCasinoReport" msprop:Generator_TableClassName="GetCasinoReportDataTable" msprop:Generator_TableVarName="tableGetCasinoReport" msprop:Generator_TablePropName="GetCasinoReport" msprop:Generator_RowDeletingName="GetCasinoReportRowDeleting" msprop:Generator_RowChangingName="GetCasinoReportRowChanging" msprop:Generator_RowEvHandlerName="GetCasinoReportRowChangeEventHandler" msprop:Generator_RowDeletedName="GetCasinoReportRowDeleted" msprop:Generator_UserTableName="GetCasinoReport" msprop:Generator_RowChangedName="GetCasinoReportRowChanged" msprop:Generator_RowEvArgName="GetCasinoReportRowChangeEvent" msprop:Generator_RowClassName="GetCasinoReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Casino" msprop:Generator_ColumnVarNameInTable="columnCasino" msprop:Generator_ColumnPropNameInRow="Casino" msprop:Generator_ColumnPropNameInTable="CasinoColumn" msprop:Generator_UserColumnName="Casino" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Route" msprop:Generator_ColumnVarNameInTable="columnReservation_Route" msprop:Generator_ColumnPropNameInRow="Reservation_Route" msprop:Generator_ColumnPropNameInTable="Reservation_RouteColumn" msprop:Generator_UserColumnName="Reservation_Route">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_NumberofSeats" msprop:Generator_ColumnVarNameInTable="columnReservation_NumberofSeats" msprop:Generator_ColumnPropNameInRow="Reservation_NumberofSeats" msprop:Generator_ColumnPropNameInTable="Reservation_NumberofSeatsColumn" msprop:Generator_UserColumnName="Reservation_NumberofSeats" type="xs:int" />
+              <xs:element name="Reservation_TravelDate" msprop:Generator_ColumnVarNameInTable="columnReservation_TravelDate" msprop:Generator_ColumnPropNameInRow="Reservation_TravelDate" msprop:Generator_ColumnPropNameInTable="Reservation_TravelDateColumn" msprop:Generator_UserColumnName="Reservation_TravelDate" type="xs:dateTime" />
+              <xs:element name="Reservation_FirstName" msprop:Generator_ColumnVarNameInTable="columnReservation_FirstName" msprop:Generator_ColumnPropNameInRow="Reservation_FirstName" msprop:Generator_ColumnPropNameInTable="Reservation_FirstNameColumn" msprop:Generator_UserColumnName="Reservation_FirstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_LastName" msprop:Generator_ColumnVarNameInTable="columnReservation_LastName" msprop:Generator_ColumnPropNameInRow="Reservation_LastName" msprop:Generator_ColumnPropNameInTable="Reservation_LastNameColumn" msprop:Generator_UserColumnName="Reservation_LastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Email" msprop:Generator_ColumnVarNameInTable="columnReservation_Email" msprop:Generator_ColumnPropNameInRow="Reservation_Email" msprop:Generator_ColumnPropNameInTable="Reservation_EmailColumn" msprop:Generator_UserColumnName="Reservation_Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Phone" msprop:Generator_ColumnVarNameInTable="columnReservation_Phone" msprop:Generator_ColumnPropNameInRow="Reservation_Phone" msprop:Generator_ColumnPropNameInTable="Reservation_PhoneColumn" msprop:Generator_UserColumnName="Reservation_Phone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Notes" msprop:Generator_ColumnVarNameInTable="columnReservation_Notes" msprop:Generator_ColumnPropNameInRow="Reservation_Notes" msprop:Generator_ColumnPropNameInTable="Reservation_NotesColumn" msprop:Generator_UserColumnName="Reservation_Notes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_CreateDate" msprop:Generator_ColumnVarNameInTable="columnReservation_CreateDate" msprop:Generator_ColumnPropNameInRow="Reservation_CreateDate" msprop:Generator_ColumnPropNameInTable="Reservation_CreateDateColumn" msprop:Generator_UserColumnName="Reservation_CreateDate" type="xs:dateTime" />
+              <xs:element name="Reservation_LastUpdate" msprop:Generator_ColumnVarNameInTable="columnReservation_LastUpdate" msprop:Generator_ColumnPropNameInRow="Reservation_LastUpdate" msprop:Generator_ColumnPropNameInTable="Reservation_LastUpdateColumn" msprop:Generator_UserColumnName="Reservation_LastUpdate" type="xs:dateTime" />
+              <xs:element name="Reservation_PersonUpdate" msprop:Generator_ColumnVarNameInTable="columnReservation_PersonUpdate" msprop:Generator_ColumnPropNameInRow="Reservation_PersonUpdate" msprop:Generator_ColumnPropNameInTable="Reservation_PersonUpdateColumn" msprop:Generator_UserColumnName="Reservation_PersonUpdate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Cancel" msprop:Generator_ColumnVarNameInTable="columnReservation_Cancel" msprop:Generator_ColumnPropNameInRow="Reservation_Cancel" msprop:Generator_ColumnPropNameInTable="Reservation_CancelColumn" msprop:Generator_UserColumnName="Reservation_Cancel" type="xs:int" minOccurs="0" />
+              <xs:element name="Reservation_Confirmation" msprop:Generator_ColumnVarNameInTable="columnReservation_Confirmation" msprop:Generator_ColumnPropNameInRow="Reservation_Confirmation" msprop:Generator_ColumnPropNameInTable="Reservation_ConfirmationColumn" msprop:Generator_UserColumnName="Reservation_Confirmation">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Traveler1Name" msprop:Generator_ColumnVarNameInTable="columnReservation_Traveler1Name" msprop:Generator_ColumnPropNameInRow="Reservation_Traveler1Name" msprop:Generator_ColumnPropNameInTable="Reservation_Traveler1NameColumn" msprop:Generator_UserColumnName="Reservation_Traveler1Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Traveler2Name" msprop:Generator_ColumnVarNameInTable="columnReservation_Traveler2Name" msprop:Generator_ColumnPropNameInRow="Reservation_Traveler2Name" msprop:Generator_ColumnPropNameInTable="Reservation_Traveler2NameColumn" msprop:Generator_UserColumnName="Reservation_Traveler2Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Traveler3Name" msprop:Generator_ColumnVarNameInTable="columnReservation_Traveler3Name" msprop:Generator_ColumnPropNameInRow="Reservation_Traveler3Name" msprop:Generator_ColumnPropNameInTable="Reservation_Traveler3NameColumn" msprop:Generator_UserColumnName="Reservation_Traveler3Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Traveler4Name" msprop:Generator_ColumnVarNameInTable="columnReservation_Traveler4Name" msprop:Generator_ColumnPropNameInRow="Reservation_Traveler4Name" msprop:Generator_ColumnPropNameInTable="Reservation_Traveler4NameColumn" msprop:Generator_UserColumnName="Reservation_Traveler4Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Traveler5Name" msprop:Generator_ColumnVarNameInTable="columnReservation_Traveler5Name" msprop:Generator_ColumnPropNameInRow="Reservation_Traveler5Name" msprop:Generator_ColumnPropNameInTable="Reservation_Traveler5NameColumn" msprop:Generator_UserColumnName="Reservation_Traveler5Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_Traveler6Name" msprop:Generator_ColumnVarNameInTable="columnReservation_Traveler6Name" msprop:Generator_ColumnPropNameInRow="Reservation_Traveler6Name" msprop:Generator_ColumnPropNameInTable="Reservation_Traveler6NameColumn" msprop:Generator_UserColumnName="Reservation_Traveler6Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reservation_TravelDisclosure" msprop:Generator_ColumnVarNameInTable="columnReservation_TravelDisclosure" msprop:Generator_ColumnPropNameInRow="Reservation_TravelDisclosure" msprop:Generator_ColumnPropNameInTable="Reservation_TravelDisclosureColumn" msprop:Generator_UserColumnName="Reservation_TravelDisclosure" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

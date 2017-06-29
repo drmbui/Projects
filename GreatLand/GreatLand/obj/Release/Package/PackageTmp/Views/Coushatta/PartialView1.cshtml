@@ -1,0 +1,32 @@
+﻿@model  List<GreatLand.Models.Routes>
+@using GridMvc.Html
+
+@*<table>
+    <tr><td> <div style="font-family:Verdana; font-size:small; font-weight:bold; text-align:left">3) Choose Departure time: </div> </td></tr>
+</table>*@
+<br />
+<div id="bakHolidays" style="width:100%">
+    @Html.Grid(Model).Columns(columns =>
+   {
+       //columns.Add(c => c.Route).Titled("Route");
+       //columns.Add(c => c.Day).Titled("Day").Filterable(false);
+       columns.Add(c => c.Depart).Titled("Depart");
+       columns.Add(c => c.ArriveCasino).Titled("Arrive Casino");
+       columns.Add(c => c.DepartCasino).Titled("Depart Casino");
+       columns.Add(c => c.ReturnTime).Titled("Return Time");
+       //columns.Add(c => c.YouPay).Titled("You Pay");
+       //columns.Add(c => c.YouReceive).Titled("You Receive");
+       columns.Add(model => model.Route).Titled("RESERVE").Filterable(true).Sanitized(false).Encoded(false).RenderValueAs(model => Html.ActionLink("Reservation", "Create", "Coushatta", new { id = model.ReservRedirectParam }, null).ToHtmlString());
+
+
+   }).WithPaging(15).Sortable(false)
+</div>
+<br />
+<div>Policies</div>
+<div style="font-size:smaller;font-family:Verdana">
+    Seating arrangements are at check-in on a first come, first serve basis.
+    One person per ticket and is per one seating arrangement ONLY.
+    All tickets are non-refundable, non-exchangeable, and non-transferable once the bus departs.
+    All passengers must be 21 years or older with a valid Federal Picture I.D. No copy accepted.
+    Please see Reservation & Travel Policies for complete travel disclosure.
+</div>

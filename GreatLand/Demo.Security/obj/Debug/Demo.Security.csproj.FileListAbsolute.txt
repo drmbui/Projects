@@ -1,0 +1,10 @@
+C:\OWIN.Demo\Demo.Security\bin\Debug\Demo.Security.dll
+C:\OWIN.Demo\Demo.Security\bin\Debug\Demo.Security.pdb
+C:\OWIN.Demo\Demo.Security\obj\Debug\Demo.Security.csprojResolveAssemblyReference.cache
+C:\OWIN.Demo\Demo.Security\obj\Debug\Demo.Security.dll
+C:\OWIN.Demo\Demo.Security\obj\Debug\Demo.Security.pdb
+C:\Applications\Great\GreatLand2\Demo.Security\bin\Debug\Demo.Security.dll
+C:\Applications\Great\GreatLand2\Demo.Security\bin\Debug\Demo.Security.pdb
+C:\Applications\Great\GreatLand2\Demo.Security\obj\Debug\Demo.Security.dll
+C:\Applications\Great\GreatLand2\Demo.Security\obj\Debug\Demo.Security.pdb
+C:\Applications\Great\GreatLand2\Demo.Security\obj\Debug\Demo.Security.csprojResolveAssemblyReference.cache

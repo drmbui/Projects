@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="greatland" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Applications\\GreatLand\\GreatLand\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Applications\\GreatLand\\GreatLand\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="AzureMongo-Web.config Connection String" description="" value="mongodb://104.215.95.249:27017" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Applications\\GreatLand\\GreatLand\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AzureMongo']/@connectionString" />
+  </parameter>
+  <parameter name="dev-Web.config Connection String" description="" value="mongodb://localhost:27017" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Applications\\GreatLand\\GreatLand\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='dev']/@connectionString" />
+  </parameter>
+  <parameter name="Active-Web.config Connection String" description="Active Connection String used in web.config by the application to access the database." value="application name=GreatLand;user id='sa';password='March1968!';initial catalog='GreatLand';data source='localhost';Network Library=dbmssocn;MultipleActiveResultSets=True;Connection Timeout=60" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Applications\\GreatLand\\GreatLand\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Active']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." value="DefaultConnection_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Applications\\GreatLand\\GreatLand\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

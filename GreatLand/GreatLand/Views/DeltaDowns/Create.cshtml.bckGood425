@@ -1,0 +1,356 @@
+﻿@model GreatLand.Models.CustTaskModelBson
+
+
+@using GridMvc.Html
+
+@{
+    ViewBag.Title = "GreatLand - Reservation";
+    Layout = "_Layout.cshtml";
+}
+
+
+
+
+    <table>
+        <tr><td> <div style="font-family:Verdana; font-size:small; font-weight:bold; text-align:left">LOCATION DETAILS </div> </td></tr>
+        <tr><td><div style="font-family:Verdana; font-size:medium; text-align:left">@TempData["Courses"]</div></td></tr>
+    </table>
+    <br />
+    <center>
+        <div>
+            <table cellpadding="25" height="0">
+                @foreach (var item in ViewData["route"] as List<GreatLand.Models.Routes>)
+            {
+                    <tr>
+                        <th style="background-color:darkcyan; font-family:Verdana; font-size:small; width:10%">
+                            Route
+                        </th>
+                        <th style="background-color:darkcyan; font-family:Verdana; font-size:small; width:15%">
+                            Day
+                        </th>
+                        <th style="background-color:darkcyan; font-family:Verdana; font-size:small; width:15%">
+                            Depart
+                        </th>
+                        <th style="background-color:darkcyan; font-family:Verdana; font-size:small; width:15%">
+                            Arrive Casino
+                        </th>
+                        <th style="background-color:darkcyan; font-family:Verdana;font-size:small; width:15%">
+                            Depart Casino
+                        </th>
+                        <th style="background-color:darkcyan; font-family:Verdana;font-size:small; width:15%">
+                            Return Time
+                        </th>
+                    </tr>
+                    <tr>
+                        <td style="font-family:Verdana;font-size:small; width:10%">
+                            @item.Route
+                        </td>
+                        <td style="font-family:Verdana;font-size:small; width:15%">
+                            @item.Day
+                        </td>
+                        <td style="font-family:Verdana;font-size:small; width:15%">
+                            @item.Depart
+                        </td>
+                        <td style="font-family:Verdana;font-size:small; width:15%">
+                            @item.ArriveCasino
+                        </td>
+                        <td style="font-family:Verdana;font-size:small; width:15%">
+                            @item.DepartCasino
+                        </td>
+                        <td style="font-family:Verdana;font-size:small; width:15%">
+                            @item.ReturnTime
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </center>
+    <br />
+    @using (Html.BeginForm("Create", "Lauberge"))
+    {
+       
+
+        <center>
+            <fieldset>
+                <legend>New Reservation</legend>
+                <div>
+                    Reservations may only be made 5 days in advance due to possible schedule changes.
+                    <br />
+                    <br />
+                </div>
+                <div>
+                    <table border="0">          
+                    <tr>        
+                        <td>          
+                            <div class="editor-label" style="text-align:center">
+                                @Html.EditorFor(model => model.Date)
+                            </div>
+                        </td>
+                    </tr>
+                        <tr>
+
+                            <td>
+                                <div class="editor-label" style="text-align:center">
+                                    @Html.ValidationMessageFor(model => model.Date)
+                                    </div>
+                            </td>
+                        </tr>
+
+                       
+                    </table>
+
+                    @Html.ValidationSummary()
+
+                    <table border="0">         
+
+                        @*<tr>
+                            <td style="visibility:hidden">
+                                <div class="editor-label" style="text-align:right">
+                                    Route
+                                </div>
+                            </td>
+                            <td style="visibility:hidden">
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Route)
+                                    @Html.ValidationMessageFor(model => model.Route)
+                                </div>
+                            </td>
+                        </tr>*@    
+                        
+
+
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    ID
+                                </div>
+                            </td>
+                            <td>
+                                <div class="editor-field">
+                                    @Html.TextBoxFor(model => model.Id, new { @Value = 0})
+                                    @Html.ValidationMessageFor(model => model.Id)
+                                </div>
+                            </td>
+                        </tr>
+
+                        
+                        <tr>
+            <td>
+                <div class="editor-label" style="text-align:right">
+                    Route
+                </div>
+            </td>
+            <td>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.Route)
+                    @Html.ValidationMessageFor(model => model.Route)
+                </div>
+            </td>
+        </tr>
+
+                              
+
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Contact First Name
+                                </div>
+                            </td>
+                            <td style="width:400px">
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.FirstName)
+                                    @Html.ValidationMessageFor(model => model.FirstName)
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Contact Last Name
+                                </div>
+                            </td>
+                            <td style="width:400px">
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.LastName)
+                                    @Html.ValidationMessageFor(model => model.LastName)
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Contact Email
+                                </div>
+                            </td>
+                            <td style="width:400px">
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Email)
+                                    @Html.ValidationMessageFor(model => model.Email)
+                                </div>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Contact Phone
+                                </div>
+                            </td>
+                            <td>
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Phone)
+                                    @Html.ValidationMessageFor(model => model.Phone)
+                                </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Comments
+                                </div>
+                            </td>
+                            <td>
+                                <div class="editor-field">
+                                    @Html.TextAreaFor(model => model.Notes)
+                                    @Html.ValidationMessageFor(model => model.Notes)
+                                </div>
+                        </tr>
+                      
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+   
+               
+
+                        <tr>
+                            <td><div class="editor-label" style="text-align:right">Number of Seats</div></td>
+
+
+                            <td>
+                                <div class="editor-field">
+                                    @{
+                                        var items = new SelectList(new[]
+                                        {
+                                            new SelectListItem {Text = "1", Value = "1" },
+                                            new SelectListItem {Text = "2", Value = "2" },
+                                             new SelectListItem {Text = "3", Value = "3" },
+                                            new SelectListItem {Text = "4", Value = "4" },
+                                             new SelectListItem {Text = "5", Value = "5" },
+                                            new SelectListItem {Text = "6", Value = "6" },
+                                        }, "Text", "Value");
+                                    }
+                                    @Html.DropDownListFor(model => model.SeatsNumber, @items)
+                                    @Html.ValidationMessageFor(model => model.SeatsNumber)
+                                </div>
+
+                            </td>
+
+             
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Name: Traveler 1 
+                                </div>
+                            </td>
+                            <td>
+                                <div id="dvPassport" class="editor-field">                      
+                                    @Html.EditorFor(model => model.Traveler1Name)
+                                    @Html.ValidationMessageFor(model => model.Traveler1Name)
+                                </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Name: Traveler 2
+                                </div>
+                            </td>
+                            <td>
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Traveler2Name)
+                                    @Html.ValidationMessageFor(model => model.Traveler2Name)
+                                </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Name: Traveler 3
+                                </div>
+                            </td>
+                            <td>
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Traveler3Name)
+                                    @Html.ValidationMessageFor(model => model.Traveler3Name)
+                                </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Name: Traveler 4
+                                </div>
+                            </td>
+                            <td>
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Traveler4Name)
+                                    @Html.ValidationMessageFor(model => model.Traveler4Name)
+                                </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Name: Traveler 5
+                                </div>
+                            </td>
+                            <td>
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Traveler5Name)
+                                    @Html.ValidationMessageFor(model => model.Traveler5Name)
+                                </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:right">
+                                    Name: Traveler 6
+                                </div>
+                            </td>
+                            <td>
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Traveler6Name)
+                                    @Html.ValidationMessageFor(model => model.Traveler6Name)
+                                </div>
+                        </tr>
+
+
+                    </table>
+                </div>
+                <div style="align-items:center">
+                    <!--<input type="submit" value="Create" />-->
+
+                    <input type="submit" value="Submit" name="action" />
+                </div>
+
+            </fieldset>
+        </center>
+
+        @*
+            <div class="editor-field">
+                @Html.EditorFor(model => model.UpDate)
+                @Html.ValidationMessageFor(model => model.UpDate)
+            </div>
+
+            <div class="editor-field">
+                @Html.EditorFor(model => model.CreatedDate)
+                @Html.ValidationMessageFor(model => model.CreatedDate)
+            </div>
+        *@
+
+
+
+    }
+
+
+

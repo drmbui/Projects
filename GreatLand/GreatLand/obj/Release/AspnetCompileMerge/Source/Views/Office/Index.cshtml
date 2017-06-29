@@ -1,0 +1,40 @@
+﻿@model IEnumerable<GreatLand.Models.CustTaskModel>
+@using GridMvc.Html
+
+@{
+    ViewBag.Title = "GreatLand office";
+}
+
+<h2>Office</h2>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Office</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/Gridmvc.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")"></script>
+</head>
+<body>
+    <div style="width:100%">
+        @Html.Grid(Model).Columns(columns =>
+   {
+       columns.Add(c => c.Route).Titled("Route");
+       columns.Add(c => c.LastName).Titled("Last Name").Filterable(true);
+       columns.Add(c => c.FirstName).Titled("First name");
+       columns.Add(c => c.Email).Titled("Email");
+       columns.Add(c => c.Phone).Titled("Phone");
+       columns.Add(c => c.SeatsNumber).Titled("Number of Seats");
+       columns.Add(c => c.Date).Titled("Travel Date");
+       columns.Add(c => c.CreatedDate).Titled("Date record was created");
+       columns.Add(c => c.UpDate).Titled("Date record was updated");
+   }).WithPaging(25).Sortable(true)
+    </div>
+
+</body>
+</html>

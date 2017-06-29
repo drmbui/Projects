@@ -1,0 +1,90 @@
+﻿@model List<GreatLand.Models.CustTaskModel>
+@{
+    ViewBag.Title = "GreatLand Tours";
+}
+
+<head>
+    <title>GreateLand Tours</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="about">
+            <p style="color: #ffffff"><strong><center>Click on one of the following casino destinations for bus schedules!</center></strong></p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+                <a href="~/Coushatta/"><img class="img-responsive" src="http://greatlandtours.com/tours/wp-content/themes/html/images/coushatta.jpg" alt="" /></a>
+                <h5><a href="~/Coushatta/">COUSHATTA</a></h5>
+                <p>Features a 100,000 square foot gaming floor, over 900 luxurious hotel rooms, a luxury RV resort, six fabulous restaurants, live entertainment and more.</p>
+                <div></div>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12">
+                <a href="~/IsleofCapri/"><img class="img-responsive" src="~/Content/Images/IsleofCapri.jpg" alt="" /></a>
+                    <h5><a href="~/IsleofCapri/">ISLE OF CAPRI</a></h5>
+                    <p>Check out the unmatched luxury, sumptuous dining, live entertainment, personal service, and the non-stop casino gaming experience at Isle of Capri Casino.</p>
+</div>
+            <div class="col-lg-2 col-sm-3 col-xs-12">
+                <a href="~/DeltaDowns/"><img class="img-responsive" src="~/Content/Images/DeltaDowns.jpg" alt="" /></a>
+                    <h5><a href="~/DeltaDowns/">DELTA DOWNS</a></h5>
+                    <p>Delta Downs Racetrack in Vinton, LA features both Quarter & Thoroughbred Horse races, over 1.600 slot machines and first-rate accommodations.</p>
+</div>
+            <div class="col-lg-2 col-sm-3 col-xs-12">
+                <a href="~/Lauberge/"><img class="img-responsive" src="~/Content/Images/Lauberge.jpg" alt="" /></a>
+                <h5><a href="~/Lauberge/">L'AUBERGE</a></h5>
+                <p>Featuring an exciting casino, elegant rooms/suites, enticing restaurants, full service spa, Tom Fazio championship golf and meeting/entertainment space.</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12">
+                <a href="~/GoldenNugget/"><img class="img-responsive" src="~/Content/Images/GN_EXTERIOR.jpg" alt="" /></a>
+                    <h5><a href="~/GoldenNugget/">Golden Nugget</a></h5>
+                    <p>Play here – eat anywhere. As a member of the 24 Karat Select club, the comps you earn can be used at any of your favorite Landry’s owned restaurants at the Golden Nugget.</p>
+</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+                <div class="about_us">
+                    <h3>About</h3>
+                    <p>GreatLand Tours, Inc., Houston’s premier coach, and shuttle service provider, has been serving the Greater Houston area since 2000. Starting with a single motorcoach bus, GreatLand Tours has grown.</p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-offset-2 col-sm-3 col-xs-12">
+                <div class="navi">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="http://localhost:11303/Home/About">About</a></li>
+                        <li><a href="http://localhost:11303/Home/Contact">Contact</a></li>
+                        <li><a href="http://localhost:11303/Home/Policy">Reservation &amp; Travel Policies</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Lost &amp; Found</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+                <div class="newslatter">
+                    <h3>Newsletter Signup</h3>
+                    <form method="post" action="http://greatlandtours.com/tours/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
+                        <input class="newsletter-email" placeholder="Email Address" type="email" name="ne" required>
+                        <input class="btn-news" type="submit" value="Go" />
+                    </form>
+                    <div class="socials_icon">
+                        <ul>
+                            <li><img src="http://greatlandtours.com/tours/wp-content/themes/html/images/twitter_icon.png" alt=""></li>
+                            <li><img src="http://greatlandtours.com/tours/wp-content/themes/html/images/facebook_icon.png" alt=""></li>
+                            <li><img src="http://greatlandtours.com/tours/wp-content/themes/html/images/instagram_icon.png" alt=""></li>
+                            <li><img src="http://greatlandtours.com/tours/wp-content/themes/html/images/youtube_icon.png" alt=""></li>
+                            <li><img src="http://greatlandtours.com/tours/wp-content/themes/html/images/pinterest_icon.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>

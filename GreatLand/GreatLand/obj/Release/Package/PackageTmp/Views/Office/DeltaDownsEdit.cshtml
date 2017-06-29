@@ -1,0 +1,298 @@
+﻿@model GreatLand.Models.CustTaskModelBson
+
+@{
+    ViewBag.Title = "GreatLand - Reservation";
+}
+
+<h2>Delta Downs Casino Resort - Office Reservation</h2>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Office</title>
+
+    <script type="text/javascript">
+    $('.datepicker').datepicker();
+    $(document).ready(function () {
+
+        //Dropdownlist Selectedchange event
+
+        $("#Country").change(function () {
+            $("#State").empty();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetDDPick")', // we are calling json method
+                dataType: 'json',
+                data: { id: $("#Country").val() },
+               // here we are get value of selected country and passing same value as inputto json method GetStates.
+                success: function (states) {
+                    // states contains the JSON formatted list
+                    // of states passed from the controller
+                    $.each(states, function (i, state) {
+                    $("#State").append('<option value="' + state.Value + '">' +
+                         state.Text + '</option>');
+                    // here we are adding option for States
+                    });
+                },
+
+                error: function (ex) {
+                    alert('Failed to retrieve states.' + ex);
+                }
+            });
+            return false;
+        })
+    });
+
+
+    </script>
+</head>
+<body>
+
+    @using (Html.BeginForm("DeltaDownsEdit", "Office"))
+    {
+        @Html.ValidationSummary(true)
+
+        <center>
+            <div class="editor-field">
+                @Html.DropDownList("Country", ViewData["Location"] as List<SelectListItem>)
+
+                @if (ViewData["PickupTime"] != null)
+                {
+                    @Html.DropDownList("State", ViewData["PickupTime"] as List<SelectListItem>)
+                }
+
+                else
+                {
+                    @Html.DropDownList("State", new SelectList(string.Empty, "Value", "Text"), "Select schedule", new { style = "width:1000px", @class = "dropdown1" })
+                }
+
+            </div>
+
+            <fieldset>
+                <legend>Edit Existing Reservation - Confirmation# @Html.DisplayFor(model => model.Confirmation)  </legend>
+                <div>
+                    Reservations may only be made 7 days in advance due to possible schedule changes.
+                    <br />
+                    <br />
+                    <br />
+                </div>
+                <div>
+
+                    <table border="0">
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:center">
+                                    @Html.EditorFor(model => model.Date)
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editor-label" style="text-align:center">
+                                    @Html.ValidationMessageFor(model => model.Date)
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br />
+                    <br />
+
+                    <!--Main Table-->
+                    <table border="0" style="width:800px">
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>Contact Info</legend>
+                                    <!--Table 1 Contact Info-->
+                                    <table border="0">
+                                        <tr>
+                                            <td style="width:200px">
+                                                <div class="editor-label" style="text-align:right">
+                                                    Contact First Name&nbsp;
+                                                </div>
+                                            </td>
+                                            <td style="width:200px">
+                                                <div class="editor-field">
+                                                    @Html.EditorFor(model => model.FirstName)
+                                                    @Html.ValidationMessageFor(model => model.FirstName)
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="editor-label" style="text-align:right">
+                                                    Contact Last Name&nbsp;
+                                                </div>
+                                            </td>
+                                            <td style="width:400px">
+                                                <div class="editor-field">
+                                                    @Html.EditorFor(model => model.LastName)
+                                                    @Html.ValidationMessageFor(model => model.LastName)
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="editor-label" style="text-align:right">
+                                                    Contact Email&nbsp;
+                                                </div>
+                                            </td>
+                                            <td style="width:400px">
+                                                <div class="editor-field">
+                                                    @Html.EditorFor(model => model.Email)
+                                                    @Html.ValidationMessageFor(model => model.Email)
+                                                </div>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="editor-label" style="text-align:right">
+                                                    Contact Phone&nbsp;
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="editor-field">
+                                                    @Html.EditorFor(model => model.Phone)
+                                                    @Html.ValidationMessageFor(model => model.Phone)
+                                                </div>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="editor-label" style="text-align:right">
+                                                    Comments&nbsp;
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="editor-field">
+                                                    @Html.TextAreaFor(model => model.Notes)
+                                                    @Html.ValidationMessageFor(model => model.Notes)
+                                                </div>
+                                        </tr>
+                                    </table>
+                            <td style="width:400px; vertical-align:text-top">
+                                <fieldset>
+                                    <legend>Enter Passenger's First/Last Name</legend>
+                                    <!--Table 2 Seats Number-->
+                                    <table style="vertical-align:top">
+
+
+                                        <tr style="vertical-align:top">
+                                            @*<td>
+                                                    <div class="editor-label" style="text-align:left">
+                                                        &nbsp;
+                                                    </div>
+                                                </td>*@
+                                            <td style="vertical-align:top">
+                                                <div id="dvPassport" class="editor-field">
+                                                    P1&nbsp; @Html.TextBoxFor(model => model.Traveler1Name)
+                                                    @Html.ValidationMessageFor(model => model.Traveler1Name)
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            @*<td>
+                                                    <div class="editor-label" style="text-align:left">
+                                                        &nbsp;
+                                                    </div>
+                                                </td>*@
+                                            <td>
+                                                <div class="editor-field">
+                                                    P2&nbsp; @Html.TextBoxFor(model => model.Traveler2Name)
+                                                    @Html.ValidationMessageFor(model => model.Traveler2Name)
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            @*<td>
+                                                    <div class="editor-label" style="text-align:left">
+                                                        &nbsp;
+                                                    </div>
+                                                </td>*@
+                                            <td>
+                                                <div class="editor-label" style="text-align:left">
+                                                    P3&nbsp; @Html.TextBoxFor(model => model.Traveler3Name)
+                                                    @Html.ValidationMessageFor(model => model.Traveler3Name)
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            @*<td>
+                                                    <div class="editor-label" style="text-align:left">
+                                                        &nbsp;
+                                                    </div>
+                                                </td>*@
+                                            <td>
+                                                <div class="editor-field">
+                                                    P4&nbsp; @Html.TextBoxFor(model => model.Traveler4Name)
+                                                    @Html.ValidationMessageFor(model => model.Traveler4Name)
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            @*<td>
+                                                    <div class="editor-label" style="text-align:left">
+                                                        &nbsp;
+                                                    </div>
+                                                </td>*@
+                                            <td>
+                                                <div class="editor-field">
+                                                    P5&nbsp; @Html.TextBoxFor(model => model.Traveler5Name)
+                                                    @Html.ValidationMessageFor(model => model.Traveler5Name)
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            @*<td>
+                                                    <div class="editor-label" style="text-align:left">
+                                                        &nbsp;
+                                                    </div>
+                                                </td>*@
+                                            <td>
+                                                <div class="editor-field">
+                                                    P6&nbsp; @Html.TextBoxFor(model => model.Traveler6Name)
+                                                    @Html.ValidationMessageFor(model => model.Traveler6Name)
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+
+                                <!--End Table 2-->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="align-items:center">
+                    <!--<input type="submit" value="Create" />-->
+
+                    <input type="submit" value="Submit" name="action" />
+                </div>
+
+            </fieldset>
+        </center>
+
+        <table>
+            <tr>
+
+                <td style="visibility:hidden">
+                    <div class="editor-field">
+                        @Html.TextBoxFor(model => model.Id)
+                        @Html.TextBoxFor(model => model.Route)
+                        @Html.TextBoxFor(model => model.Confirmation)
+                        @*Html.ValidationMessageFor(model => model.Id)*@
+                    </div>
+                </td>
+
+
+
+            </tr>
+        </table>
+
+    }
+
+
+</body>
+
+</html>
+

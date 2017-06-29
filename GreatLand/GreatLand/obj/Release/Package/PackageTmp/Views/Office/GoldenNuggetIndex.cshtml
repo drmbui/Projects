@@ -1,0 +1,43 @@
+﻿@model  List<GreatLand.Models.Routes>
+@using GridMvc.Html
+@{
+    ViewBag.Title = "Golden Nugget";
+}
+
+<h2>Golden Nugget Casino Office Report</h2>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Office</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/Gridmvc.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.10.2.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")"></script>
+
+</head>
+<body>
+
+    @using (Html.BeginForm("GoldenNuggetIndex", "Office"))
+    {
+
+
+
+        @Html.DropDownList("SearchValue", ViewData["Location"] as List<SelectListItem>, new { @onchange = "this.form.submit();" })
+
+        <div>
+            @Html.Partial("GoldenNuggetPartialView1", Model)
+
+        </div>
+
+
+        <div>
+            @*Html.Partial("PartialView2", new GreatLand.Models.PartialViewModel { PartialView2Message = Model.PartialView2Message })*@
+        </div>
+
+
+    }
+</body>
+</html>

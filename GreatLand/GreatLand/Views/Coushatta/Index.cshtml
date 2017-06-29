@@ -1,0 +1,81 @@
+﻿@model  List<GreatLand.Models.Routes>
+@using GridMvc.Html
+@{
+    ViewBag.Title = "Coushatta";
+}
+
+<h2>Coushatta Casino Resort</h2>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Coushatta</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/Gridmvc.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.10.2.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")"></script>
+
+
+
+</head>
+<body>
+
+    @using (Html.BeginForm("Index", "Coushatta"))
+    {
+        <center>Reservations may only be made 7 days in advance due to possible schedule changes.</center>
+        <br />
+
+        if (Model != null)
+        {
+                <table>
+                    <tr><td> <div style="font-family:Verdana; font-size:small; font-weight:bold; text-align:left">LOCATION DETAILS </div> </td></tr>
+                    <tr><td><div style="font-family:Verdana; font-size:medium; text-align:left">@TempData["LocationDesc"]</div></td></tr>
+                </table>
+                <br />
+                <br />
+
+    
+     
+                <table>
+                    <tr><td><div style="font-family:Verdana; font-size:small; font-weight:bold; text-align:left">Please Choose Travel Date &nbsp;</div></td>
+                        <td>
+                            <div class="editor-label" style="text-align:center">
+                                @Html.DropDownList("TravelDateValue", ViewData["TravelDate"] as List<SelectListItem>, new { @onchange = "this.form.submit();" })
+                            </div>
+                        </td>
+                    </tr>
+                    @if (ViewData["Location"] != null)
+                    {
+                    <tr><td><div style="font-family:Verdana; font-size:small; font-weight:bold; text-align:left">Please Choose Departure Location &nbsp;</div></td><td><Div>@Html.DropDownList("SearchValue", ViewData["Location"] as List<SelectListItem>, new { @onchange = "this.form.submit();" })</Div></td></tr>
+                    }
+                 </table>
+
+     
+
+                <div>
+                    @Html.Partial("PartialView1", Model)
+
+                </div>
+        }
+        else
+        {
+
+            <table>
+                <tr>
+                    <td><div style="font-family:Verdana; font-size:small; font-weight:bold; text-align:left">Please Choose Travel Date &nbsp;</div></td>
+                    <td>
+                        <div class="editor-label" style="text-align:center">
+                            @Html.DropDownList("TravelDateValue", ViewData["TravelDate"] as List<SelectListItem>, new { @onchange = "this.form.submit();" })
+                        </div>
+                    </td>
+                </tr>
+
+            
+            </table>
+        }
+    }
+</body>
+    </html>
+

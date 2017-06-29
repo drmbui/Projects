@@ -1,0 +1,5 @@
+C:\Applications\Great\GreatLand2\Demo.Security\bin\Release\Demo.Security.dll
+C:\Applications\Great\GreatLand2\Demo.Security\bin\Release\Demo.Security.pdb
+C:\Applications\Great\GreatLand2\Demo.Security\obj\Release\Demo.Security.csprojResolveAssemblyReference.cache
+C:\Applications\Great\GreatLand2\Demo.Security\obj\Release\Demo.Security.dll
+C:\Applications\Great\GreatLand2\Demo.Security\obj\Release\Demo.Security.pdb

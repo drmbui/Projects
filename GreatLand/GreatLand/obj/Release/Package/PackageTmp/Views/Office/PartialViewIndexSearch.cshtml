@@ -1,0 +1,32 @@
+﻿@model List<GreatLand.Models.CustReportModel>
+@using GridMvc.Html
+
+
+<div id="bakHolidays" style="width:100%">
+    
+    @Html.Grid(Model).Columns(columns =>
+{
+    columns.Add(c => c.Confirmation).Titled("Confirmation").Filterable(false);
+    columns.Add(c => c.Route).Titled("Route").Filterable(false);
+    columns.Add(c => c.LastName).Titled("Last Name").Filterable(true);
+    columns.Add(c => c.FirstName).Titled("First Name").Filterable(true);
+    columns.Add(c => c.Email).Titled("Email");
+    columns.Add(c => c.Phone).Titled("Phone");
+    columns.Add(c => c.SeatsNumber).Titled("# of Seats");
+    columns.Add(c => c.Date).Titled("Travel Date");
+    columns.Add(c => c.Notes).Titled("Notes");
+    columns.Add(c => c.Traveler1Name).Titled("P1");
+    columns.Add(c => c.Traveler2Name).Titled("P2");
+    columns.Add(c => c.Traveler3Name).Titled("P3");
+    columns.Add(c => c.Traveler4Name).Titled("P4");
+    columns.Add(c => c.Traveler5Name).Titled("P5");
+    columns.Add(c => c.Traveler6Name).Titled("P6");
+    columns.Add(c => c.CreatedDate).Titled("Created");
+    //columns.Add(c => c.UpDate).Titled("Date Updated");
+    columns.Add(c => c.PersonUpdate).Titled("Person Updated");
+    columns.Add(c => c.Id).Titled("Edit").Filterable(true).Sanitized(false).Encoded(false).RenderValueAs(model => Html.ActionLink("Edit", "GenericEdit", "Office", new { id = model.Route + "|" + model.Id }, null).ToHtmlString());
+    columns.Add(c => c.DeleteId).Titled("Delete").Filterable(true).Sanitized(false).Encoded(false).RenderValueAs(model => Html.ActionLink("Delete", "OfficeDelete", "Office", new { id = model.Id }, null).ToHtmlString());
+
+}).WithPaging(15).Sortable(true)
+</div>
+

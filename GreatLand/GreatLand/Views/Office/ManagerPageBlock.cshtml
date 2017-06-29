@@ -1,0 +1,83 @@
+﻿@model List<GreatLand.Models.ManagerView>
+@{
+    ViewBag.Title = "Manager Route Block";
+    Layout = "_Layout.cshtml";
+}
+
+<h2>Manager Route Block</h2>
+
+
+
+@*<div>Route 2</div>
+<table>
+    <tr>
+        <td width="100">
+            @Html.CheckBox("Pickupbeechnut")
+        </td>
+        <td width="100">
+            @Html.CheckBox("Pickupguessner")
+        </td>
+    </tr>
+</table>*@
+
+@using (Html.BeginForm("ManagerBlock", "Office"))
+{
+    //@Html.DropDownList("SearchValue", ViewData["Location"] as List<SelectListItem>, new { @onchange = "this.form.submit();" })
+    foreach(var items in Model)
+    {
+        <table>
+            <tr>
+                <td>
+                    Enable Block:
+                </td>
+                <td>
+                    @Html.RadioButton("Status", "Enable", true)
+                    
+                </td>
+              
+            </tr>
+            <tr>
+                <td>
+                    Disable Block:
+                </td>
+                <td>
+                    @Html.RadioButton("Status", "Disable", false)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Block Start Date/Time:
+                </td>
+                <td>
+                    @Html.TextBox("StartBlock", @items.StartVoidDate)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Block End Date/Time:
+                </td>
+                <td>
+                    @Html.TextBox("EndBlock", @items.EndVoidDate)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.TextBox("RouteId", @items.RouteNumber, new { style = "display:none;" })</td>
+            </tr>
+            
+
+        </table>
+     
+    }
+
+    <div style="align-items:center">
+        <!--<input type="submit" value="Create" />-->
+
+        <input type="submit" value="Submit" name="action" />
+    </div>
+
+
+    <div>
+        @Html.Partial("PartialViewManagerRouteBlock", Model)
+
+    </div>
+}

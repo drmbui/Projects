@@ -1,0 +1,54 @@
+﻿@model IEnumerable<GreatLand.Models.CustReportModel>
+@using GridMvc.Html
+@{
+    ViewBag.Title = "DeltaDownsReport";
+}
+
+<h2>Delta Downs Report</h2>
+
+
+<html>
+<head>
+    <title>Office</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/themes/Gridmvc.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" />
+
+
+    <script src="@Url.Content("~/Scripts/jquery-2.1.4.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-2.1.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.11.4.min.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Scripts/gridmvc.min.js")"></script>
+
+
+
+
+</head>
+<body>
+
+    <div id="bakHolidays" style="width:100%">
+        @Html.Grid(Model).Columns(columns =>
+   {
+       columns.Add(c => c.Route).Titled("Route").Filterable(false);
+       columns.Add(c => c.LastName).Titled("Last Name").Filterable(true);
+       columns.Add(c => c.FirstName).Titled("First Name").Filterable(true);
+       columns.Add(c => c.Email).Titled("Email");
+       columns.Add(c => c.Phone).Titled("Phone");
+       columns.Add(c => c.SeatsNumber).Titled("# of Seats");
+       columns.Add(c => c.Date).Titled("Travel Date");
+       columns.Add(c => c.Notes).Titled("Notes");
+       columns.Add(c => c.CreatedDate).Titled("Date Created");
+       columns.Add(c => c.UpDate).Titled("Date Updated");
+       columns.Add(c => c.PersonUpdate).Titled("Person Updated");
+       columns.Add(c => c.Id).Titled("Edit").Filterable(true).Sanitized(false).Encoded(false).RenderValueAs(model => Html.ActionLink("Edit", "LaubergeEdit", "Office", new { id = model.Id }, null).ToHtmlString());
+       columns.Add(c => c.DeleteId).Titled("Delete").Filterable(true).Sanitized(false).Encoded(false).RenderValueAs(model => Html.ActionLink("Delete", "LaubergeReport", "Office", new { id = model.Id }, null).ToHtmlString());
+
+   }).WithPaging(15).Sortable(true)
+    </div>
+    
+</body>
+</html>

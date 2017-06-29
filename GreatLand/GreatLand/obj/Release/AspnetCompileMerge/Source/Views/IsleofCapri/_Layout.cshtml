@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - GreatLand</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown">Casino Trips <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Lauberge", "Index", "Lauberge")</li>
+                            <li>@Html.ActionLink("Coushatta", "Index", "Coushatta")</li>
+                            <li>@Html.ActionLink("DeltaDowns", "Index", "DeltaDowns")</li>
+                            <li>@Html.ActionLink("GoldenNugget", "Index", "GoldenNugget")</li>
+                            <li>@Html.ActionLink("HorseshoeCasino", "Index", "HorseshoeCasino")</li>
+                            <li>@Html.ActionLink("IsleofCapri", "Index", "IsleofCapri")</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Office", "Login", "About")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - GreatLand Tours</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+@RenderSection("scripts", required: false)
+</html>

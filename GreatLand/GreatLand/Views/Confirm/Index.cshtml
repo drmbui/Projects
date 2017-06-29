@@ -1,0 +1,15 @@
+﻿@model GreatLand.Models.CustTaskModelBson
+
+@{
+    ViewBag.Title = "Reservation Confirmed";
+    Layout = "~/Views/Confirm/_Layout.cshtml";
+}
+
+<h2>Reservation Confirmed</h2>
+<table>
+    <tr>
+        <td>
+            <div>Reservation number <strong>@Html.DisplayFor(model => model.Confirmation)</strong> has been confirmed. Please bring the confirmation # at boarding time. Contact 713-777-9988 | info@greatlandtours.com for any questions</div>
+        </td>
+    </tr>
+</table>

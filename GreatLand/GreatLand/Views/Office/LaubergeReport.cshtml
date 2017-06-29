@@ -1,0 +1,68 @@
+﻿@model List<GreatLand.Models.CasinoReport>
+@using GridMvc.Html
+@{
+    ViewBag.Title = "LaubergeReport";
+}
+
+<h2>LaubergeReport</h2>
+
+
+<html>
+<head>
+    <title>Office</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/themes/Gridmvc.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" />
+
+
+    <script src="@Url.Content("~/Scripts/jquery-2.1.4.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-2.1.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.11.4.min.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Scripts/gridmvc.min.js")"></script>
+
+
+
+
+</head>
+<body>
+
+    <div id="bakHolidays" style="width:100%">
+        @Html.Grid(Model).Columns(columns =>
+   {
+       columns.Add(c => c.Reservation_Confirmation).Titled("Confirmation").Filterable(false);
+       columns.Add(c => c.Reservation_LastName).Titled("Last Name").Filterable(true);
+       columns.Add(c => c.Reservation_FirstName).Titled("First Name").Filterable(true);
+       //columns.Add(c => c.Reservation_FirstName).Titled("Email");
+       columns.Add(c => c.Reservation_Phone).Titled("Phone");
+       //columns.Add(c => c.SeatsNumber).Titled("# of Seats");
+       //columns.Add(c => c.Date).Titled("Travel Date");
+       //columns.Add(c => c.Notes).Titled("Notes");
+       columns.Add(c => c.Reservation_Traveler1Name).Titled("P1");
+       columns.Add(c => c.Reservation_Traveler2Name).Titled("P2");
+       columns.Add(c => c.Reservation_Traveler3Name).Titled("P3");
+       columns.Add(c => c.Reservation_Traveler4Name).Titled("P4");
+       columns.Add(c => c.Reservation_Traveler5Name).Titled("P5");
+       columns.Add(c => c.Reservation_Traveler6Name).Titled("P6");
+       //columns.Add(c => c.Traveler2Name).Titled("Traveler 2");
+       //columns.Add(c => c.Traveler3Name).Titled("Traveler 3");
+       //columns.Add(c => c.Traveler4Name).Titled("Traveler 4");
+       //columns.Add(c => c.Traveler5Name).Titled("Traveler 5");
+       //columns.Add(c => c.Traveler6Name).Titled("Traveler 6");
+       //columns.Add(c => c.CreatedDate).Titled("Date Created");
+       //columns.Add(c => c.UpDate).Titled("Date Updated");
+       //columns.Add(c => c.PersonUpdate).Titled("Person Updated");
+       //columns.Add(c => c.Id).Titled("Edit").Filterable(true).Sanitized(false).Encoded(false).RenderValueAs(model => Html.ActionLink("Edit", "LaubergeEdit", "Office", new { id = model.Id }, null).ToHtmlString());
+       //columns.Add(c => c.DeleteId).Titled("Delete").Filterable(true).Sanitized(false).Encoded(false).RenderValueAs(model => Html.ActionLink("Delete", "LaubergeReport", "Office", new { id = model.Id }, null).ToHtmlString());
+
+
+
+
+   }).WithPaging(15).Sortable(true)
+    </div>
+    
+</body>
+</html>

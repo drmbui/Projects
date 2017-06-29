@@ -1,0 +1,44 @@
+﻿@model List<GreatLand.Models.ManagerView>
+
+@{
+    ViewBag.Title = "ManagerPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Manager Control Page</h2>
+
+
+
+@*Html.EditorFor(model => model.StartVoidDate)*@
+
+@using (Html.BeginForm("Index", "Office"))
+{
+    //@Html.DropDownList("SearchValue", ViewData["Location"] as List<SelectListItem>, new { @onchange = "this.form.submit();" })
+
+    <div>
+        @Html.Partial("PartialViewManagerRoute", Model)
+
+    </div>
+}
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type='text/javascript'>
+    $(function(){
+      $('.date-picker').datepicker();
+    })
+    </script>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+</head>
+<body>
+
+    <input class='date-picker' />
+</body>
+</html>
+    -->

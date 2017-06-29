@@ -1,0 +1,30 @@
+﻿@model List<GreatLand.Models.ManagerView>
+@using GridMvc.Html
+
+<br />
+<br />
+<br />
+@*<table>
+    <tr><td> <div style="font-family:Verdana; font-size:small; font-weight:bold; text-align:left">PICKUP LOCATION DETAILS </div> </td></tr>
+    <tr><td><div style="font-family:Verdana; font-size:medium; text-align:left">@TempData["LocationDesc"]</div></td></tr>
+</table>*@
+<div id="ManagerRoute" style="width:100%">
+    @Html.Grid(Model).Columns(columns =>
+   {
+       //columns.Add(c => c.Route).Titled("Route");
+       //columns.Add(c => c.Id).Titled("ID").Filterable(false);
+       columns.Add(c => c.RouteNumber).Titled("RouteNumber");
+       columns.Add(c => c.Casino).Titled("Casino");
+       columns.Add(c => c.Route).Titled("Route");
+       columns.Add(c => c.DepartTime).Titled("Depart Time");
+       columns.Add(c => c.DayOfTheWeek).Titled("Day of the Week");
+       columns.Add(c => c.PickUpLocations).Titled("Pickup");       
+       columns.Add(c => c.Active).Titled("Active");
+       columns.Add(c => c.StartVoidDate).Titled("Begin Stop Pickup Date");
+       columns.Add(c => c.EndVoidDate).Titled("End Stop Pickup Date");
+       columns.Add(model => model.Id).Titled("Block Route").Filterable(true).Sanitized(false).Encoded(false).RenderValueAs(model => Html.ActionLink("Block", "ManagerPageBlock", "Office", new { id = model.Id }, null).ToHtmlString());
+
+
+   }).WithPaging(15).Sortable(false)
+</div>
+

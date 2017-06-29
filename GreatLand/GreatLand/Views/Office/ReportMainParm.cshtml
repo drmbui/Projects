@@ -1,0 +1,67 @@
+﻿
+
+@{
+    ViewBag.Title = "Main Report";
+    Layout = "~/Views/Office/_Layout.cshtml";
+}
+
+<h2>Main Report</h2>
+
+@using (Html.BeginForm("ManagerBlock", "Office"))
+{
+   
+
+        <table>
+            @*<tr>
+                <td>
+                    Enable Block:
+                </td>
+                <td>
+                    @Html.RadioButton("Status", "Enable", true)
+
+                </td>
+
+            </tr>*@
+            <tr>
+                <td>
+                    Casino:
+                </td>
+                <td>
+                    @Html.DropDownList("SearchValue", ViewData["Location"] as List<SelectListItem>)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    From Date:
+                </td>
+                <td>
+                    @Html.TextBox("Start")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    To Date:
+                </td>
+                <td>
+                    @Html.TextBox("End")
+                </td>
+            </tr>
+            <tr>
+                @*<td>@Html.TextBox("RouteId", @items.RouteNumber, new { style = "display:none;" })</td>*@
+            </tr>
+
+
+        </table>
+
+    <div style="align-items:center">
+        <!--<input type="submit" value="Create" />-->
+
+        <input type="submit" value="Submit" name="action" />
+    </div>
+
+
+    <div>
+        @*@Html.Partial("PartialViewManagerRouteBlock", Model)*@
+
+    </div>
+}

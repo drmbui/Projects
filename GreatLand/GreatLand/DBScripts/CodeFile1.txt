@@ -1,0 +1,219 @@
+﻿Lauberge
+
+Southwest Houston
+db.Route.insert({ Route: "LA-01",Day: "Everyday",Depart: "9:00 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:45 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"LA-02",Day:"Everyday",Depart:"11:00 AM",ArriveCasino:"1:45 PM",DepartCasino:"6:45 PM",ReturnTime:"9:20 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"LA-03",Day:"Everyday",Depart:"1:00 PM",ArriveCasino:"3:40 PM",DepartCasino:"8:45 PM",ReturnTime:"11:10 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"LA-04",Day:"Everyday",Depart:"4:00 PM",ArriveCasino:"6:30 PM",DepartCasino:"11:30 PM",ReturnTime:"2:00 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"LA-05",Day:"Everyday",Depart:"6:30 PM",ArriveCasino:"9:30 PM",DepartCasino:"3:00 AM",ReturnTime:"5:45 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"LA-06",Day:"Everyday",Depart:"8:30 PM",ArriveCasino:"11:20 PM",DepartCasino:"4:30 AM",ReturnTime:"7:15 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"LA-07",Day:"Everyday",Depart:"11:00 PM",ArriveCasino:"1:45 AM",DepartCasino:"7:00 AM",ReturnTime:"9:40 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+
+South Houston
+db.Route.insert({ Route: "LB-01",Day: "Everyday",Depart: "9:20 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:15 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"LB-02",Day:"Everyday",Depart:"11:30 AM",ArriveCasino:"1:45 PM",DepartCasino:"6:45 PM",ReturnTime:"8:55 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"LB-03",Day:"Everyday",Depart:"7:00 PM",ArriveCasino:"9:20 PM",DepartCasino:"3:00 AM",ReturnTime:"5:15 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"LB-04",Day:"Everyday",Depart:"9:00 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"6:45 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"LB-05",Day:"Fri,Sat,Sun",Depart:"11:30 PM",ArriveCasino:"1:45 AM",DepartCasino:"7:00 AM",ReturnTime:"9:15 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+
+East Houston
+db.Route.insert({ Route: "LC-01",Day: "Everyday",Depart: "9:45 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:00 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"LC-02",Day:"Everyday",Depart:"11:50 AM",ArriveCasino:"1:45 PM",DepartCasino:"6:45 PM",ReturnTime:"8:40 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"LC-03",Day:"Everyday",Depart:"1:40 PM",ArriveCasino:"3:40 PM",DepartCasino:"8:45 PM",ReturnTime:"10:40 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit",  DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"LC-04",Day:"Everyday",Depart:"7:20 PM",ArriveCasino:"9:20 PM",DepartCasino:"3:00 AM",ReturnTime:"5:00 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit",  DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"LC-05",Day:"Everyday",Depart:"9:20 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"6:30 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"LC-06",Day:"Fri,Sat,Sun",Depart:"11:50 PM",ArriveCasino:"1:45 AM",DepartCasino:"7:00 AM",ReturnTime:"9:00 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit",  DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+
+Pearland Houston
+db.Route.insert({ Route: "LD-01",Day: "Fri,Sat,Sun",Depart: "9:25 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:25 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Pearland Houston", DescriptionD:"Beltway 8 @ Pearland Parkway | Target | 8503 South Sam Houston Pkwy E Houston, TX 77075"})
+db.Route.insert({Route:"LD-02",Day:"Fri,Sat",Depart:"9:00 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"6:40 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Pearland Houston", DescriptionD:"Beltway 8 @ Pearland Parkway | Target | 8503 South Sam Houston Pkwy E Houston, TX 77075"})
+
+Pasadena Houston
+db.Route.insert({ Route: "LE-01",Day: "Fri,Sat,Sun",Depart: "9:40 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "7:10 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Pasadena", DescriptionD:"Pep Boys | 5445 Fairmond Pkwy Houston, TX 77505"})
+db.Route.insert({Route:"LE-02",Day:"Fri,Sat",Depart:"9:15 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"6:30 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Pasadena", DescriptionD:"Pep Boys | 5445 Fairmond Pkwy Houston, TX 77505"})
+
+
+Northwest Houston
+db.Route.insert({ Route: "LF-01",Day: "Fri,Sat,Sun",Depart: "8:00 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "8:00 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Northwest Houston", DescriptionD:"290 @ FWY @ Hollister | Whataburger | 13270 Northwest Frwy Houston, TX 77040"})
+db.Route.insert({Route:"LF-02",Day:"Fri,Sat",Depart:"7:45 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"7:30 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Northwest Houston", DescriptionD:"290 @ FWY @ Hollister | Whataburger | 13270 Northwest Frwy Houston, TX 77040"})
+
+45 North Little York, Houston
+db.Route.insert({ Route: "LG-01",Day: "Fri,Sat,Sun",Depart: "8:30 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "7:40 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"45 North Little York", DescriptionD:"Whataburger | 444 W Little York Houston, TX 77076"})
+db.Route.insert({Route:"LG-02",Day:"Fri,Sat",Depart:"8:20 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"7:10 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"45 North Little York", DescriptionD:"Whataburger | 444 W Little York Houston, TX 77076"})
+
+Baytown
+db.Route.insert({ Route: "LH-01",Day: "Everyday",Depart: "10:00 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "6:50 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway"})
+db.Route.insert({Route:"LH-02",Day:"Fri,Sat",Depart:"9:45 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"5:15 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway"})
+
+
+________________________
+Coushata
+
+South Houston
+db.Route.insert({ Route: "CA-01",Day: "Everyday",Depart: "9:15 AM",ArriveCasino: "12:00 PM",DepartCasino: "5:00 PM",ReturnTime: "7:50 PM",YouPay: "$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"CA-02",Day:"Everyday",Depart:"6:40 PM",ArriveCasino:"9:40 PM",DepartCasino:"2:45 AM",ReturnTime:"5:40 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"CA-03",Day:"Everyday",Depart:"8:40 PM",ArriveCasino:"11:30 PM",DepartCasino:"4:30 AM",ReturnTime:"7:20 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"CA-04",Day:"Wed to Sun",Depart:"11:00 PM",ArriveCasino:"2:00 AM",DepartCasino:"7:00 AM",ReturnTime:"9:45 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+
+Southwest Houston
+db.Route.insert({ Route: "CB-01",Day: "Everyday",Depart: "8:45 AM",ArriveCasino: "12:00 PM",DepartCasino: "5:00 PM",ReturnTime: "8:15 PM",YouPay: "$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"CB-02",Day:"Everyday",Depart:"6:00 PM",ArriveCasino:"9:40 PM",DepartCasino:"2:45 AM",ReturnTime:"6:10 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"CB-03",Day:"Everyday",Depart:"8:00 PM",ArriveCasino:"11:30 PM",DepartCasino:"4:30 AM",ReturnTime:"7:50 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"CB-04",Day:"Everyday",Depart:"10:30 PM",ArriveCasino:"2:00 AM",DepartCasino:"7:00 AM",ReturnTime:"10:15 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+
+Northwest Houston
+db.Route.insert({ Route: "CC-01",Day: "Tue,Fri,Sat,Sun",Depart: "8:00 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "8:20 PM",YouPay: "$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"Northwest Houston", DescriptionD:"290 @ FWY @ Hollister | Whataburger | 13270 Northwest Frwy Houston, TX 77040"})
+db.Route.insert({Route:"CC-02",Day:"Fri,Sat",Depart:"7:30 PM",ArriveCasino:"11:30 PM",DepartCasino:"4:30 AM",ReturnTime:"7:50 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"Northwest Houston", DescriptionD:"290 @ FWY @ Hollister | Whataburger | 13270 Northwest Frwy Houston, TX 77040"})
+
+45 North Little York, Houston
+db.Route.insert({ Route: "CD-01",Day: "Tue,Fri,Sat,Sun",Depart: "8:30 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "8:00 PM",YouPay: "$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"45 North Little York", DescriptionD:"Whataburger | 444 W Little York Houston, TX 77076"})
+db.Route.insert({Route:"CD-02",Day:"Fri,Sat",Depart:"8:00 PM",ArriveCasino:"11:30 PM",DepartCasino:"4:30 AM",ReturnTime:"7:30 AM",YouPay:"$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"45 North Little York", DescriptionD:"Whataburger | 444 W Little York Houston, TX 77076"})
+
+East Houston
+db.Route.insert({ Route: "CE-01",Day: "Everyday",Depart: "9:30 AM",ArriveCasino: "12:00 PM",DepartCasino: "5:00 PM",ReturnTime: "7:35 PM",YouPay: "$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"CE-02",Day:"Everyday",Depart:"7:00 PM",ArriveCasino:"9:40 PM",DepartCasino:"2:45 AM",ReturnTime:"5:25 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"CE-03",Day:"Everyday",Depart:"9:00 PM",ArriveCasino:"11:30 PM",DepartCasino:"4:30 AM",ReturnTime:"7:05 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays",  DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"CE-04",Day:"Everyday",Depart:"11:15 PM",ArriveCasino:"2:00 AM",DepartCasino:"7:00 AM",ReturnTime:"9:30 AM",YouPay:"$10",YouReceive:"$10 Casino Free play Sunday night through Friday Morning - Except Holidays",  DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+
+Baytown
+db.Route.insert({ Route: "CF-01",Day: "Everyday",Depart: "9:45 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "7:20 PM",YouPay: "$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway"})
+db.Route.insert({Route:"CF-02",Day:"Everyday",Depart:"9:15 PM",ArriveCasino:"11:30 PM",DepartCasino:"4:30 AM",ReturnTime:"6:50 AM",YouPay:"$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway"})
+
+Beaumont
+db.Route.insert({ Route: "CG-01",Day: "Everyday",Depart: "10:30 AM",ArriveCasino: "12:00 PM",DepartCasino: "5:00 PM",ReturnTime: "6:30 PM",YouPay: "$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays", DescriptionH:"Beaumont", DescriptionD:"I-10 East @ 11th St. | Market Basket | 2255 N 11th St Beaumont, TX 77703"})
+db.Route.insert({Route:"CG-02",Day:"Everyday",Depart:"8:15 PM",ArriveCasino:"9:40 PM",DepartCasino:"2:45 AM",ReturnTime:"4:15 AM",YouPay:"$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays",  DescriptionH:"Beaumont", DescriptionD:"I-10 East @ 11th St. | Market Basket | 2255 N 11th St Beaumont, TX 77703"})
+db.Route.insert({Route:"CG-03",Day:"Fri,Sat",Depart:"10:00 PM",ArriveCasino:"11:30 PM",DepartCasino:"4:30 AM",ReturnTime:"6:00 AM",YouPay:"$10",YouReceive: "$10 Casino Free play Sunday night through Friday Morning - Except Holidays",  DescriptionH:"Beaumont", DescriptionD:"I-10 East @ 11th St. | Market Basket | 2255 N 11th St Beaumont, TX 77703"})
+
+________________________________
+Delta Downs
+
+Southwest
+db.Route.insert({ Route: "CH-01",Day: "Wednesday",Depart: "9:00 AM",ArriveCasino: "11:25 AM",DepartCasino: "4:30 PM",ReturnTime: "7:00 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({ Route: "CH-02",Day: "Thursday",Depart: "9:00 AM",ArriveCasino: "11:25 AM",DepartCasino: "4:30 PM",ReturnTime: "7:00 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({ Route: "CH-03",Day: "Sunday",Depart: "10:30 AM",ArriveCasino: "12:50 PM",DepartCasino: "6:00 PM",ReturnTime: "8:20 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+
+South Houston
+db.Route.insert({Route:"CI-01",Day:"Wednesday",Depart:"9:30 AM",ArriveCasino:"11:25 AM",DepartCasino:"4:30 PM",ReturnTime:"6:30 PM",YouPay:"$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"CI-02",Day:"Thursday",Depart:"9:30 AM",ArriveCasino:"11:25 AM",DepartCasino:"4:30 PM",ReturnTime:"6:30 PM",YouPay:"$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"CI-03",Day:"Sunday",Depart:"11:00 AM",ArriveCasino:"12:50 PM",DepartCasino:"6:00 PM",ReturnTime:"7:55 PM",YouPay:"$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+
+East Houston
+db.Route.insert({ Route: "CJ-01",Day: "Wednesday",Depart: "9:45 AM",ArriveCasino: "11:25 AM",DepartCasino: "4:30 PM",ReturnTime: "6:15 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"CJ-02",Day:"Thursday",Depart:"9:45 AM",ArriveCasino:"11:25 AM",DepartCasino:"4:30 PM",ReturnTime:"6:15 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"CJ-03",Day:"Sunday",Depart:"11:20 AM",ArriveCasino:"12:50 PM",DepartCasino:"6:00 PM",ReturnTime:"7:40 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit",  DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+
+Baytown
+db.Route.insert({ Route: "BA-01",Day: "Wednesday",Depart: "10:00 AM",ArriveCasino: "11:25 AM",DepartCasino: "4:30 PM",ReturnTime: "6:00 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway @ Garth Rd"})
+db.Route.insert({Route:"BA-02",Day:"Thursday",Depart:"10:00 AM",ArriveCasino:"11:25 AM",DepartCasino:"4:30 PM",ReturnTime:"6:00 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway @ Garth Rd"})
+db.Route.insert({Route:"BA-03",Day:"Sunday",Depart:"11:45 AM",ArriveCasino:"12:50 PM",DepartCasino:"6:00 PM",ReturnTime:"7:25 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway @ Garth Rd"})
+
+____________________________________________________________________________________________________________________________________________________________________________
+
+Golden Nugget
+
+Southwest Houston
+db.Route.insert({ Route: "GN-06",Day: "Everyday",Depart: "9:00 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:45 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"GN-07",Day:"Everyday",Depart:"11:00 AM",ArriveCasino:"1:45 PM",DepartCasino:"6:45 PM",ReturnTime:"9:20 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"GN-08",Day:"Everyday",Depart:"1:00 PM",ArriveCasino:"3:40 PM",DepartCasino:"8:45 PM",ReturnTime:"11:10 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"GN-09",Day:"Everyday",Depart:"4:00 PM",ArriveCasino:"6:30 PM",DepartCasino:"11:30 PM",ReturnTime:"2:00 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"GN-10",Day:"Everyday",Depart:"6:30 PM",ArriveCasino:"9:30 PM",DepartCasino:"3:00 AM",ReturnTime:"5:45 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"GN-11",Day:"Everyday",Depart:"8:30 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"7:00 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"GN-12",Day:"Everyday",Depart:"11:00 PM",ArriveCasino:"1:45 AM",DepartCasino:"7:00 AM",ReturnTime:"9:40 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+
+
+South Houston
+db.Route.insert({ Route: "GN-01",Day: "Everyday",Depart: "9:20 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:15 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"GN-02",Day:"Everyday",Depart:"11:30 AM",ArriveCasino:"1:45 PM",DepartCasino:"6:45 PM",ReturnTime:"8:55 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"GN-03",Day:"Everyday",Depart:"7:00 PM",ArriveCasino:"9:20 PM",DepartCasino:"3:00 AM",ReturnTime:"5:15 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"GN-04",Day:"Everyday",Depart:"9:00 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"6:45 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"GN-05",Day:"Fri,Sat,Sun",Depart:"11:30 PM",ArriveCasino:"1:45 AM",DepartCasino:"7:00 AM",ReturnTime:"9:15 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+
+East Houston
+db.Route.insert({ Route: "GN-13",Day: "Everyday",Depart: "9:45 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:00 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"GN-14",Day:"Everyday",Depart:"11:50 AM",ArriveCasino:"1:45 PM",DepartCasino:"6:45 PM",ReturnTime:"8:40 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"GN-15",Day:"Everyday",Depart:"1:40 PM",ArriveCasino:"3:40 PM",DepartCasino:"8:45 PM",ReturnTime:"10:40 PM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit",  DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"GN-16",Day:"Everyday",Depart:"7:20 PM",ArriveCasino:"9:20 PM",DepartCasino:"3:00 AM",ReturnTime:"5:00 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit",  DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"GN-17",Day:"Everyday",Depart:"9:20 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"6:30 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"GN-18",Day:"Fri,Sat,Sun",Depart:"11:50 PM",ArriveCasino:"1:45 AM",DepartCasino:"7:00 AM",ReturnTime:"9:00 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit",  DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+
+Pearland Houston
+db.Route.insert({ Route: "PL-01",Day: "Fri,Sat,Sun",Depart: "9:25 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:25 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Pearland Houston", DescriptionD:"Beltway 8 @ Pearland Parkway | Target | 8503 South Sam Houston Pkwy E Houston, TX 77075"})
+db.Route.insert({Route:"PL-02",Day:"Fri,Sat",Depart:"9:00 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"6:40 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Pearland Houston", DescriptionD:"Beltway 8 @ Pearland Parkway | Target | 8503 South Sam Houston Pkwy E Houston, TX 77075"})
+
+Pasadena Houston
+db.Route.insert({ Route: "PS-01",Day: "Fri,Sat,Sun",Depart: "9:40 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "7:10 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Pasadena", DescriptionD:"Pep Boys | 5445 Fairmond Pkwy Houston, TX 77505"})
+db.Route.insert({Route:"PS-02",Day:"Fri,Sat",Depart:"9:15 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"6:30 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Pasadena", DescriptionD:"Pep Boys | 5445 Fairmond Pkwy Houston, TX 77505"})
+
+45 North Little York, Houston
+db.Route.insert({ Route: "GN-19",Day: "Fri,Sat,Sun",Depart: "8:30 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "7:40 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"45 North Little York", DescriptionD:"Whataburger | 444 W Little York Houston, TX 77076"})
+db.Route.insert({Route:"GN-20",Day:"Fri,Sat",Depart:"8:20 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"7:10 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"45 North Little York", DescriptionD:"Whataburger | 444 W Little York Houston, TX 77076"})
+
+Northwest Houston
+db.Route.insert({ Route: "NW-01",Day: "Fri,Sat,Sun",Depart: "9:40 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "7:10 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Northwest Houston", DescriptionD:"290 @ FWY @ Hollister | Whataburger | 13270 Northwest Frwy Houston, TX 77040"})
+db.Route.insert({Route:"NW-02",Day:"Fri,Sat",Depart:"7:45 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"7:30 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Northwest Houston", DescriptionD:"290 @ FWY @ Hollister | Whataburger | 13270 Northwest Frwy Houston, TX 77040"})
+
+Baytown
+db.Route.insert({ Route: "BT-01",Day: "Everyday",Depart: "10:00 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "6:50 PM",YouPay: "$10",YouReceive: "$5 player credit or $10 meal credit", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway"})
+db.Route.insert({Route:"BT-02",Day:"Fri,Sat",Depart:"9:45 PM",ArriveCasino:"11:15 PM",DepartCasino:"4:30 AM",ReturnTime:"6:15 AM",YouPay:"$10",YouReceive:"$5 player credit or $10 meal credit", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway"})
+
+______________________________
+
+Horseshoe Casino Bossier City
+
+South Houston
+db.Route.insert({ Route: "HB-01",Day: "Friday",Depart: "7:30 PM",ArriveCasino: "12:00 AM",DepartCasino: "5:30 PM",ReturnTime: "9:45 PM",YouPay: "$10",YouReceive: "-", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"HB-02",Day:"Sunday",Depart:"8:30 AM",ArriveCasino:"1:00 PM",DepartCasino:"6:30 PM",ReturnTime:"10:45 PM",YouPay:"$10",YouReceive:"-", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+
+Southwest Houston
+db.Route.insert({ Route: "HB-03",Day: "Friday",Depart: "7:00 PM",ArriveCasino: "12:00 AM",DepartCasino: "5:30 PM",ReturnTime: "10:10 PM",YouPay: "$10",YouReceive: "-", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"HB-04",Day:"Sunday",Depart:"8:00 AM",ArriveCasino:"1:00 PM",DepartCasino:"6:30 PM",ReturnTime:"11:10 PM",YouPay:"$10",YouReceive:"-", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+
+45 North Little York, Houston
+db.Route.insert({ Route: "HB-05",Day: "Friday",Depart: "8:00 PM",ArriveCasino: "12:00 AM",DepartCasino: "5:30 PM",ReturnTime: "9:20 PM",YouPay: "$10",YouReceive: "-", DescriptionH:"45 North Little York", DescriptionD:"Whataburger | 444 W Little York Houston, TX 77076"})
+db.Route.insert({Route:"HB-06",Day:"Sunday",Depart:"9:45 AM",ArriveCasino:"1:00 PM",DepartCasino:"6:30 PM",ReturnTime:"10:25 PM",YouPay:"$10",YouReceive:"-", DescriptionH:"45 North Little York", DescriptionD:"Whataburger | 444 W Little York Houston, TX 77076"})
+
+Lufkin, TX
+db.Route.insert({ Route: "HB-07",Day: "Friday",Depart: "8:00 PM",ArriveCasino: "12:00 AM",DepartCasino: "5:30 PM",ReturnTime: "9:20 PM",YouPay: "$10",YouReceive: "-", DescriptionH:"Lufkin", DescriptionD:"WALMART | 2500 Daniel McCall Dr. | Pickup at Outback Steakhouse"})
+db.Route.insert({Route:"HB-08",Day:"Sunday",Depart:"11:00 AM",ArriveCasino:"1:00 PM",DepartCasino:"6:30 PM",ReturnTime:"8:35 PM",YouPay:"$10",YouReceive:"-", DescriptionH:"Lufkin", DescriptionD:"WALMART | 2500 Daniel McCall Dr. | Pickup at Outback Steakhouse"})
+
+
+___________________
+
+Isle of Capri Casino
+
+Southwest Houston
+db.Route.insert({ Route: "IC-01",Day: "Everyday",Depart: "9:00 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:45 PM",YouPay: "$10",YouReceive: "$10 player credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+db.Route.insert({Route:"IC-02",Day:"Everyday",Depart:"8:30 PM",ArriveCasino:"11:20 PM",DepartCasino:"4:30 AM",ReturnTime:"7:15 AM",YouPay:"$10",YouReceive:"$10 player credit", DescriptionH:"Southwest Houston", DescriptionD:"Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart"})
+
+South Houston
+db.Route.insert({ Route: "IC-03",Day: "Everyday",Depart: "9:30 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:15 PM",YouPay: "$10",YouReceive: "$10 player credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+db.Route.insert({Route:"IC-04",Day:"Everyday",Depart:"9:00 PM",ArriveCasino:"11:20 PM",DepartCasino:"4:30 AM",ReturnTime:"6:45 AM",YouPay:"$10",YouReceive:"$10 player credit", DescriptionH:"South Houston", DescriptionD:"45 South @ Woodridge | Gulfgate Mall | Parking lot behind WENDY's | 2928 Woodridge Dr. Houston, TX 77087"})
+
+East Houston
+db.Route.insert({ Route: "IC-05",Day: "Everyday",Depart: "9:45 AM",ArriveCasino: "11:50 PM",DepartCasino: "5:00 PM",ReturnTime: "7:00 PM",YouPay: "$10",YouReceive: "$10 player credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+db.Route.insert({Route:"IC-06",Day:"Everyday",Depart:"9:20 PM",ArriveCasino:"11:20 PM",DepartCasino:"4:30 AM",ReturnTime:"6:30 AM",YouPay:"$10",YouReceive:"$10 player credit", DescriptionH:"East Houston", DescriptionD:"I-10 East @ Uvalde | Whataburger | 13550 East Freeway Houston, TX 77015"})
+
+Baytown
+db.Route.insert({ Route: "IC-07",Day: "Everyday",Depart: "10:00 AM",ArriveCasino: "11:50 AM",DepartCasino: "5:00 PM",ReturnTime: "6:45 PM",YouPay: "$10",YouReceive: "$10 player credit", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway"})
+db.Route.insert({Route:"IC-08",Day:"Everyday",Depart:"9:40 PM",ArriveCasino:"11:20 PM",DepartCasino:"4:30 AM",ReturnTime:"6:15 AM",YouPay:"$10",YouReceive:"$10 player credit", DescriptionH:"Baytown", DescriptionD:"Toys R Us | 4815 I-10 E Freeway"})
+
+
+insert into tb_RoutePickupday values(
+    'LA-07',
+    'Everyday',
+    '11:00 PM',
+    '1:45 AM',
+    '7:00 AM',
+    '9:40 AM',
+    '$16',
+    '$5 player credit or $10 meal credit',
+    'Southwest Houston',
+    'Greatland Office | 8800 W. Sam Houston Pkwy S. | Beltway 8 feeder between Beechnut/Bissonet | @ Foodtown next to Walmart',
+    10,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1

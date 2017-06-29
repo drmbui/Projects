@@ -1,0 +1,48 @@
+﻿@model  List<GreatLand.Models.Routes>
+@using GridMvc.Html
+
+<br />
+<br />
+<br />
+<table>
+    <tr><td> <div style="font-family:Verdana; font-size:small; font-weight:bold; text-align:left">PICKUP LOCATION DETAILS </div> </td></tr>
+    <tr><td><div style="font-family:Verdana; font-size:medium; text-align:left">@TempData["LocationDesc"]</div></td></tr>
+</table>
+<div id="bakHolidays" style="width:100%">
+    @Html.Grid(Model).Columns(columns =>
+   {
+       //columns.Add(c => c.Route).Titled("Route");
+       columns.Add(c => c.Day).Titled("Day").Filterable(false);
+       columns.Add(c => c.Depart).Titled("Depart");
+       columns.Add(c => c.ArriveCasino).Titled("Arrive Casino");
+       columns.Add(c => c.DepartCasino).Titled("Depart Casino");
+       columns.Add(c => c.ReturnTime).Titled("Return Time");
+       //columns.Add(c => c.YouPay).Titled("You Pay");
+       //columns.Add(c => c.YouReceive).Titled("You Receive");
+       columns.Add(model => model.Route).Titled("REPORT").Filterable(true).Sanitized(false).Encoded(false).RenderValueAs(model => Html.ActionLink("See Report", "DeltaDownsReport", "Office", new { id = model.Route }, null).ToHtmlString());
+
+
+   }).WithPaging(15).Sortable(false)
+</div>
+@*<br />
+<br />
+<br />
+<div>Policies</div>
+<div style="font-size:smaller;font-family:Verdana">
+
+    RESERVATION HOURS: 8:30AM - 10:00PM, MONDAY TO SUNDAY
+    Weekend trips schedule may be 30 minutes late due to road construction, traffic and weather.
+
+    Reservations must be made a day before for DAY TRIPS and by 5:00PM for NIGHT TRIPS.
+    Office reservations will be automatic cancelled 15 minutes prior to departure time.
+    Seating arrangements are at check-in on a first come, first serve basis.
+    One person per ticket and is per one seating arrangement ONLY.
+    All tickets are non-refundable, non-exchangeable, and non-transferable once the bus departs.
+    All passengers must be 21 years or older with a valid Federal Picture I.D. No copy accepted.
+    No luggage permitted, unless arranged with office in advance with your casino hotel reservation.
+    We assume no liability for damage to the bag, nor for loss or damage to the contents of the bag.
+
+    Additional Fee may apply without casino card of destination. We reserve the right to alter or cancel without notice.
+    THE BUS COMPANY AND THE CASINOS ARE NOT RESPONSIBLE FOR GUESTS WHO MISS THEIR SCHEDULED DEPARTURE. PASSENGERS ARE RESPONSIBLE FOR RIDING THE CORRECT BUS FOR THEIR INTENDED DESTINATION AND EXITING THE BUS AT THE CORRECT STOP.
+    TRANSPORTATION SERVICES ARE PROVIDED FOR GAMING CUSTOMERS ONLY. THIS BUS SERVICE IS NOT FOR GENERAL PUBLIC TRANSPORTATION.
+</div>*@

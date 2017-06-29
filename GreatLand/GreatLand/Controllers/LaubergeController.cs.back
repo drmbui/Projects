@@ -1,0 +1,425 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using GreatLand;
+using GreatLand.Models;
+
+using System.Threading;
+using System.Threading.Tasks;
+
+using MongoDB.Driver;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+namespace GreatLand.Controllers
+{
+    public class LaubergeController : Controller
+    {
+
+        private Dal dal = new Dal();
+        
+        
+
+        public async Task<ActionResult> Index()
+        {
+            
+            List<SelectListItem> li = new List<SelectListItem>();
+
+            li.Add(new SelectListItem { Text = "Select a casino", Value = "0" });
+
+            li.Add(new SelectListItem { Text = "Lauberge", Value = "1" });
+
+            li.Add(new SelectListItem { Text = "Coushata", Value = "2" });
+
+            li.Add(new SelectListItem { Text = "Delta Downs", Value = "3" });
+
+            li.Add(new SelectListItem { Text = "Golden Nugget", Value = "4" });
+
+            li.Add(new SelectListItem { Text = "Horseshoe Casino", Value = "5" });
+
+            li.Add(new SelectListItem { Text = "Isle of Capri", Value = "6" });
+
+            ViewData["country"] = li;
+
+
+            return View(LookupData.Laub_SWH);
+
+        }
+
+        // GET: Lauberge
+        //public async Task<ActionResult> Index()
+        //{
+
+
+        //    var greatLandRoute = new List<Routes>();
+
+        //    var route = await dal.GetRoute();
+
+        //    foreach (var doc in route.ToList<BsonDocument>())
+        //    {
+        //        //put an increment here to add the description 1 time
+        //        int descCount = 0;
+
+        //        //var greatLa = BsonSerializer.Deserialize<CustTaskModel>(doc);
+        //        greatLandRoute.Add(new Routes(Convert.ToString(doc["Route"]),
+        //                                        Convert.ToString(doc["Day"]),
+        //                                        Convert.ToString(doc["Depart"]),
+        //                                        Convert.ToString(doc["ArriveCasino"]),
+        //                                        Convert.ToString(doc["DepartCasino"]),
+        //                                        Convert.ToString(doc["ReturnTime"]),
+        //                                        Convert.ToString(doc["YouPay"]),
+        //                                        Convert.ToString(doc["YouReceive"]),
+        //                                        Convert.ToString(doc["DescriptionH"]),
+        //                                        Convert.ToString(doc["DescriptionD"])
+        //                                        ));
+
+        //        if (descCount == 0)
+        //        {
+        //            TempData["Courses"] = Convert.ToString(doc["DescriptionH"]) + ": " + Convert.ToString(doc["DescriptionD"]);
+        //        }
+        //        descCount++;
+        //    }
+
+        //    List<SelectListItem> li = new List<SelectListItem>();
+        //    li.Add(new SelectListItem { Text = "Select", Value = "0" });
+        //    li.Add(new SelectListItem { Text = "India", Value = "1" });
+        //    li.Add(new SelectListItem { Text = "Srilanka", Value = "2" });
+
+        //    ViewData["country"] = li;
+
+        //    return View(greatLandRoute);
+
+        //}
+
+        public JsonResult GetStates(string id)
+
+        {
+
+            List<SelectListItem> states = new List<SelectListItem>();
+
+            switch (id)
+
+            {
+                //Lauberge
+                case "1":
+
+                    states.Add(new SelectListItem { Text = "Select Lauberge Casino pickup location", Value = "0" });
+                    states.Add(new SelectListItem { Text = "Southwest Houston", Value = "1" });
+                    states.Add(new SelectListItem { Text = "South Houston", Value = "2" });
+                    states.Add(new SelectListItem { Text = "East Houston", Value = "3" });
+                    states.Add(new SelectListItem { Text = "Pearland Houston", Value = "4" });
+                    states.Add(new SelectListItem { Text = "Pasadena Houston", Value = "5" });
+                    states.Add(new SelectListItem { Text = "Northwest Houston", Value = "6" });
+                    states.Add(new SelectListItem { Text = "45 North Little York, Houston", Value = "7" });
+                    states.Add(new SelectListItem { Text = "Baytown", Value = "8" });                 
+
+                    break;
+
+                //Coushata
+                case "2":
+                    states.Add(new SelectListItem { Text = "Select Coushata Casino pickup location", Value = "0" });
+                    states.Add(new SelectListItem { Text = "Southwest Houston", Value = "1" });
+                    states.Add(new SelectListItem { Text = "South Houston", Value = "2" });
+                    states.Add(new SelectListItem { Text = "Nothwest Houston", Value = "3" });
+                    states.Add(new SelectListItem { Text = "East Houston", Value = "4" });
+                    states.Add(new SelectListItem { Text = "45 North Little York, Houston", Value = "5" });
+                    states.Add(new SelectListItem { Text = "Baytown", Value = "6" });
+                    states.Add(new SelectListItem { Text = "Beaumont", Value = "7" });
+                    
+             
+                    break;
+                
+                //Delta Downs
+                case "3":
+                    states.Add(new SelectListItem { Text = "Select Delta Downs Casino pickup location", Value = "0" });
+                    states.Add(new SelectListItem { Text = "Southwest Houston", Value = "1" });
+                    states.Add(new SelectListItem { Text = "South Houston", Value = "2" });
+                    states.Add(new SelectListItem { Text = "East Houston", Value = "3" });
+                    states.Add(new SelectListItem { Text = "Baytown", Value = "4" });
+           
+                    break;
+
+                //Golden Nugget
+                case "4":
+                    states.Add(new SelectListItem { Text = "Select Golden Nugget Casino pickup location", Value = "0" });
+                    states.Add(new SelectListItem { Text = "Southwest Houston", Value = "1" });
+                    states.Add(new SelectListItem { Text = "South Houston", Value = "2" });
+                    states.Add(new SelectListItem { Text = "East Houston", Value = "3" });
+                    states.Add(new SelectListItem { Text = "Baytown", Value = "4" });
+                    states.Add(new SelectListItem { Text = "Pearland", Value = "5" });
+                    states.Add(new SelectListItem { Text = "Pasadena Houston", Value = "6" });
+                    states.Add(new SelectListItem { Text = "45 North Little York, Houston", Value = "7" });
+                    states.Add(new SelectListItem { Text = "Northwest Houston", Value = "8" });
+               
+                    break;
+
+                //Horseshoe Casino Bossier City
+                case "5":
+                    states.Add(new SelectListItem { Text = "Select Horseshoe Casino pickup location", Value = "0" });
+                    states.Add(new SelectListItem { Text = "Southwest Houston", Value = "1" });
+                    states.Add(new SelectListItem { Text = "South Houston", Value = "2" });
+                    states.Add(new SelectListItem { Text = "45 North Little York, Houston", Value = "3" });
+                    states.Add(new SelectListItem { Text = "Lufkin, TX", Value = "4" });
+
+                    break;
+
+                //Isle Capri
+                case "6":
+                    states.Add(new SelectListItem { Text = "Select Isle of Capri Casino pickup location", Value = "0" });
+                    states.Add(new SelectListItem { Text = "Southwest Houston", Value = "1" });
+                    states.Add(new SelectListItem { Text = "South Houston", Value = "2" });
+                    states.Add(new SelectListItem { Text = "East Houston", Value = "3" });
+                    states.Add(new SelectListItem { Text = "Baytown", Value = "4" });
+
+                    break;
+            }
+
+            return Json(new SelectList(states, "Value", "Text"));
+
+        }
+
+        public JsonResult GetCity(string id)
+
+        {
+
+            List<SelectListItem> City = new List<SelectListItem>();
+
+            switch (id)
+
+            {
+
+                case "20":
+
+                    City.Add(new SelectListItem { Text = "Select", Value = "0" });
+
+                    City.Add(new SelectListItem { Text = "MUMBAI", Value = "1" });
+
+                    City.Add(new SelectListItem { Text = "PUNE", Value = "2" });
+
+                    City.Add(new SelectListItem { Text = "KOLHAPUR", Value = "3" });
+
+                    City.Add(new SelectListItem { Text = "RATNAGIRI", Value = "4" });
+
+                    City.Add(new SelectListItem { Text = "NAGPUR", Value = "5" });
+
+                    City.Add(new SelectListItem { Text = "JALGAON", Value = "6" });
+
+                    break;
+
+            }
+
+
+
+            return Json(new SelectList(City, "Value", "Text"));
+
+        }
+
+        // GET: Lauberge/Details/5
+        public ActionResult Details(int id)
+        {
+            return View();
+        }
+
+        // GET: Lauberge/Create
+        public async Task<ActionResult> Create(string id)
+        {
+            var custTaskModelBson = new CustTaskModelBson();
+            var greatLandRoute = new List<Routes>();
+
+            var route = await dal.GetRoute(id);
+
+            foreach (var doc in route.ToList<BsonDocument>())
+            {
+                //put an increment here to add the description 1 time
+                int descCount = 0;
+                //var greatLa = BsonSerializer.Deserialize<CustTaskModel>(doc);
+                greatLandRoute.Add(new Routes(Convert.ToString(doc["Route"]),
+                                                Convert.ToString(doc["Day"]),
+                                                Convert.ToString(doc["Depart"]),
+                                                Convert.ToString(doc["ArriveCasino"]),
+                                                Convert.ToString(doc["DepartCasino"]),
+                                                Convert.ToString(doc["ReturnTime"]),
+                                                Convert.ToString(doc["YouPay"]),
+                                                Convert.ToString(doc["YouReceive"]),
+                                                Convert.ToString(doc["DescriptionH"]),
+                                                Convert.ToString(doc["DescriptionD"])
+               
+                                                ));
+                if (descCount == 0)
+                {
+                    TempData["Courses"] = Convert.ToString(doc["DescriptionH"]) + ": " + Convert.ToString(doc["DescriptionD"]);
+                }
+                descCount++; 
+                
+            }
+
+            ViewData["route"] = greatLandRoute;
+            
+
+            //var greatLa = BsonSerializer.Deserialize<CustTaskModel>(doc);
+            custTaskModelBson.Route = id;
+            custTaskModelBson.Date = DateTime.Now;
+
+            return View(custTaskModelBson);
+        }
+
+
+        // GET: Lauberge/Create
+        //public async Task<ActionResult> Create(string id)
+        //{
+
+        //    var greatLandRoute = new List<Routes>();
+        //    var custTask = new List<CustTaskModel>();
+
+        //    var route = await dal.GetRoute(id);
+
+        //    foreach (var doc in route.ToList<BsonDocument>())
+        //    {
+        //        //var greatLa = BsonSerializer.Deserialize<CustTaskModel>(doc);
+        //        greatLandRoute.Add(new Routes(Convert.ToString(doc["Route"]),
+        //                                        Convert.ToString(doc["Day"]),
+        //                                        Convert.ToString(doc["Depart"]),
+        //                                        Convert.ToString(doc["ArriveCasino"]),
+        //                                        Convert.ToString(doc["DepartCasino"]),
+        //                                        Convert.ToString(doc["ReturnTime"]),
+        //                                        Convert.ToString(doc["YouPay"]),
+        //                                        Convert.ToString(doc["YouReceive"])));
+        //    }
+
+        //    ViewModelCreate vm = new ViewModelCreate();
+        //    vm.route = greatLandRoute;
+        //    vm.custTaskModel = custTask;
+
+        //    return View(vm);
+        //}
+
+
+        // GET: Lauberge/Edit/5
+        public ActionResult Edit(int id)
+        {
+            return View();
+        }
+
+        // POST: Lauberge/Edit/5
+        [HttpPost]
+        public ActionResult Edit(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add update logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: Lauberge/Delete/5
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+        // POST: Lauberge/Delete/5
+        [HttpPost]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+
+        // POST: Lauberge/Create
+        [HttpPost]
+        public ActionResult Create(FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add insert logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Add(CustTaskModelBson cust)
+        {
+            dal.CreateTask(cust);
+
+            //if (this.IsValid(connect))
+            //{
+            /*
+                //reset the error variable
+                TempData["Error"] = null;
+                int applicationId = this._user.ApplicationID;
+                // int marketType = (int)this.GetMarketType();
+                string marketTypeName;
+                if ((int)connect.MarketTypeID != (int)MarketTypeCode.GlobalToGlobalDefault)
+                {
+                    OriginTypeCode originType = ((OriginTypeCode)connect.OriginTypeID);
+                    DestinationTypeCode destType = ((DestinationTypeCode)connect.DestinationTypeID);
+                    marketTypeName = originType.ToString() + "To" + destType.ToString();
+                }
+                else
+                {
+                    marketTypeName = MarketTypeCode.GlobalToGlobalDefault.ToString();
+                }
+                MarketTypeCodeUpper marketType = (MarketTypeCodeUpper)Enum.Parse(typeof(MarketTypeCodeUpper), marketTypeName.ToUpper());
+                using (var unitOfWork = new ScheduleUnitOfWork())
+                {
+                    var manager = new ConnectManager(unitOfWork);
+
+                    var c = new Connect()
+                    {
+                        ApplicationID = applicationId,
+                        Origin = connect.Origin.ToUpper(),
+                        OriginTypeID = connect.OriginTypeID,
+                        Destination = connect.Destination.ToUpper(),
+                        DestinationTypeID = connect.DestinationTypeID,
+                        ConnectingAirport = connect.ConnectingAirport.ToUpper(),
+                        ConnectFactor = connect.ConnectFactor,
+                        EffectiveDate = connect.EffectiveDate,
+                        DiscontinueDate = connect.DiscontinueDate,
+                        MarketTypeID = (int)marketType,
+                        StatusTypeID = connect.StatusTypeID,
+                        CreatedByID = _user.UserID.ToUpper(), //.Identity.Name,
+                        ModifiedByID = _user.UserID.ToUpper(), //_principal.Identity.Name,
+                        LastModifiedDate = DateTime.Now,
+                        DateCreated = DateTime.Now,
+                        MarketingCarrier = connect.MarketingCarrier.ToUpper(),
+                        OperatingCarrier = connect.OperatingCarrier.ToUpper()
+                        //InBoundMarketingCarrier = connect.InBoundMarketingCarrier.ToUpper(),
+                        //OutBoundMarketingCarrier = connect.OutBoundMarketingCarrier.ToUpper(),
+                        //InBoundOperatingCarrier = connect.InBoundOperatingCarrier.ToUpper(),
+                        //OutBoundOperatingCarrier = connect.OutBoundOperatingCarrier.ToUpper()
+                    };
+                    manager.Add(c);
+                    unitOfWork.Commit();
+                    TempData["Success"] = "Successfully added new connect.";
+*/
+
+            //}
+            //}
+
+            //this.PopulateTypes(connect);
+            return RedirectToAction("Index");
+        }
+
+    }
+}
+

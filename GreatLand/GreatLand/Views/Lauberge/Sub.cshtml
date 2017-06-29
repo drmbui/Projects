@@ -1,0 +1,135 @@
+﻿@model GreatLand.Models.CustTaskModelBson
+
+@{
+    ViewBag.Title = "Confirmed";
+    Layout = "~/Views/Lauberge/_Layout.cshtml";
+
+}
+
+<h2>Reservation Confirmed</h2>
+<div>
+    <hr />
+    <div>An email confirmation has been sent to <strong>@Html.DisplayFor(model => model.Email)</strong>  please confirm this reservation by clicking on the link inside the email</div>
+    <br />
+    <div>Show this <strong>confirmation number @Html.DisplayFor(model => model.Confirmation)</strong> at boarding time. Contact 713-777-9988 | info@greatlandtours.com for any questions</div>
+    <br />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Confirmation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Confirmation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Route)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Route)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeatsNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeatsNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Traveler1Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Traveler1Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Traveler2Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Traveler2Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Traveler3Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Traveler3Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Traveler4Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Traveler4Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Traveler5Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Traveler5Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Traveler6Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Traveler6Name)
+        </dd>
+    </dl>
+</div>
+<p>
+    @*Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
