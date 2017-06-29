@@ -1,0 +1,8 @@
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\State\State\bin\Debug\State.exe.config
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\State\State\bin\Debug\State.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\State\State\bin\Debug\State.pdb
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\State\State\obj\Debug\State.Form1.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\State\State\obj\Debug\State.Properties.Resources.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\State\State\obj\Debug\State.csproj.GenerateResource.Cache
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\State\State\obj\Debug\State.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\State\State\obj\Debug\State.pdb

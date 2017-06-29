@@ -1,0 +1,8 @@
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Iterator\Iterator\bin\Debug\Iterator.exe.config
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Iterator\Iterator\bin\Debug\Iterator.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Iterator\Iterator\bin\Debug\Iterator.pdb
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Iterator\Iterator\obj\Debug\Iterator.Form1.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Iterator\Iterator\obj\Debug\Iterator.Properties.Resources.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Iterator\Iterator\obj\Debug\Iterator.csproj.GenerateResource.Cache
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Iterator\Iterator\obj\Debug\Iterator.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Iterator\Iterator\obj\Debug\Iterator.pdb

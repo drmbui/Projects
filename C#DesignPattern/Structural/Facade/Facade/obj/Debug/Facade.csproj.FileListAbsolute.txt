@@ -1,0 +1,8 @@
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Facade\Facade\bin\Debug\Facade.exe.config
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Facade\Facade\bin\Debug\Facade.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Facade\Facade\bin\Debug\Facade.pdb
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Facade\Facade\obj\Debug\Facade.Form1.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Facade\Facade\obj\Debug\Facade.Properties.Resources.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Facade\Facade\obj\Debug\Facade.csproj.GenerateResource.Cache
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Facade\Facade\obj\Debug\Facade.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Facade\Facade\obj\Debug\Facade.pdb

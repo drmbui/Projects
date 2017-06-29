@@ -1,0 +1,8 @@
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Template\Template\bin\Debug\Template.exe.config
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Template\Template\bin\Debug\Template.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Template\Template\bin\Debug\Template.pdb
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Template\Template\obj\Debug\Template.Form1.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Template\Template\obj\Debug\Template.Properties.Resources.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Template\Template\obj\Debug\Template.csproj.GenerateResource.Cache
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Template\Template\obj\Debug\Template.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Template\Template\obj\Debug\Template.pdb

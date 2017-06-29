@@ -1,0 +1,9 @@
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 2\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 2\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 2\AbstractFactory\AbstractFactory\bin\Debug\AbstractFactory.pdb
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 2\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.csprojResolveAssemblyReference.cache
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 2\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.Form1.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 2\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.Properties.Resources.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 2\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.csproj.GenerateResource.Cache
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 2\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 2\AbstractFactory\AbstractFactory\obj\Debug\AbstractFactory.pdb

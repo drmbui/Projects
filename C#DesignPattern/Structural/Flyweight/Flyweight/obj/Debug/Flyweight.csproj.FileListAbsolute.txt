@@ -1,0 +1,7 @@
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Flyweight\Flyweight\bin\Debug\Flyweight.exe.config
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Flyweight\Flyweight\bin\Debug\Flyweight.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Flyweight\Flyweight\bin\Debug\Flyweight.pdb
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Flyweight\Flyweight\obj\Debug\Flyweight.Properties.Resources.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Flyweight\Flyweight\obj\Debug\Flyweight.csproj.GenerateResource.Cache
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Flyweight\Flyweight\obj\Debug\Flyweight.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 3\Flyweight\Flyweight\obj\Debug\Flyweight.pdb

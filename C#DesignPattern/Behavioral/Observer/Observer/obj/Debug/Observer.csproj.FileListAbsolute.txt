@@ -1,0 +1,17 @@
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\bin\Debug\Observer.exe.config
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\bin\Debug\Observer.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\bin\Debug\Observer.pdb
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.Form1.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.Properties.Resources.resources
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.csproj.GenerateResource.Cache
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.exe
+C:\Users\u306358\Desktop\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.pdb
+D:\Project\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\bin\Debug\Observer.exe.config
+D:\Project\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\bin\Debug\Observer.exe
+D:\Project\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\bin\Debug\Observer.pdb
+D:\Project\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.csprojResolveAssemblyReference.cache
+D:\Project\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.Form1.resources
+D:\Project\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.Properties.Resources.resources
+D:\Project\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.csproj.GenerateResource.Cache
+D:\Project\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.exe
+D:\Project\DesignPattern\Working_Files\Learning C Sharp Design Patterns - Working Files\Chapter 4\Observer\Observer\obj\Debug\Observer.pdb
